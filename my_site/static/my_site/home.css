@@ -1,7 +1,7 @@
-.buton-download{
-    text-align: center;
-}
 
+.buton-download{
+    margin-top: 60px;
+}
 
 img {
     width: 300px;
@@ -10,7 +10,7 @@ img {
     border-radius: 50%;
     float: left;
     shape-outside: margin-box;
-    margin: 0 20px 5px 0;
+    margin: 0 10px 5px 0;
 }
 /*
 .container::after {
@@ -21,18 +21,86 @@ img {
 */
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
     border-radius: 25px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-    margin-top: 60px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    margin-top: 80px;
+    background-color: #66CDAA;
 }
 
+
+
 .container p {
+    font-size: 20px;
     line-height: 1.4;
 }
 
-.container h2 {
-    margin-bottom: 10px;
+.buton-download .btn:hover{
+    color: #87CEFA;
+}
+
+.body-container {
+    height: 100%;
+}
+
+.body-container .buton-download{
+    position: relative;
+}
+
+.body-container .buton-download .btn{
+    margin-left: 200px;
+}
+
+.social-links {
+    display: flex;
+
+}
+
+.social-links a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #00;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.2);
+    margin: 0px 20px;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.social-links a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.social-links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #00FF00, #8a2be2);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social-links a:hover::after{
+    top: 0;
+}
+
+.social-links a:hover .fa-brands{
+    color: #fff;
+}
+
+.social-links a:hover{
+    transform: translateY(-15px);
 }
