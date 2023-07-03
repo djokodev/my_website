@@ -1,6 +1,55 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %} {% load static %}
+<head>
+  <meta charset="UTF-8" />
+  <title>About</title>
+  <link rel="stylesheet" href="{% static 'my_site/moi.css'%}" />
+</head>
+<h1>Who Am I ?</h1>
 
+<body class="moibody">
+  <div class="container1">
+    <p>
+      Orientation isn't always easy in our African families, so I did my
+      secondary education in a technical high school, specializing in f5
+      (refrigeration and air conditioning), yes I know it sounds a bit weird 😅.
+      When I was a senior in high school, I fell in love with technology, and
+      that's when I discovered the data professions. Since then, I've had just
+      one goal: to become a Deep Learning Engineer.
+      <img class="moi" src="{% static 'my_site/moi2.png' %}" alt="image" />
+    </p>
 
-    {% block content %}
-        <h1>About Me</h1>
-    {% endblock %}
+    <p>
+      I encountered a lot of problems at the outset, particularly concerning my
+      predispositions for a career in this field. Coming from a very remote
+      background, the question was whether I would succeed on this axis! But as
+      Steve Jobs says
+      <span class="citation"
+        >"Your work will occupy a large part of your life, and the only way to
+        be truly satisfied is to do what you think is a great job. And the only
+        way to do a great job is to love what you do"</span
+      >
+      and so 😉
+    </p>
+  </div>
+  <p>
+    Today I've got my "brevet de technicien supérieur" (BTS) in software
+    engineering, and to get closer to my goal I decided to start with web
+    development, and what better way than with the programming language python,
+    since today it's a reference in fields such as artificial intelligence,
+    machine learning and deep learning.
+  </p>
+  <p>
+    I've been a fullstack python developer for over a year now, and use
+    technologies such as Django, React, Git, Html, Css and Bootstrap on a daily
+    basis. And when it comes to artificial intelligence, I currently hold more
+    than three certifications in areas such as data science, machine learning
+    and deep learning. I develop and deploy artificial intelligence solutions
+    such as computer vision, speech recognition and many others.
+  </p>
+
+  <p class="endabout">
+    I hope I have no more secrets for you 😏, let me know reciprocally about you
+    <a class="btn btn-primary" href="{% url 'contact' %}">contact me</a>
+  </p>
+</body>
+{% endblock %}

@@ -20,7 +20,7 @@ def contact(request):
     return render(request, "contact.html")
 
 def download(request):
-    file = os.path.join(settings.BASE_DIR, 'my_site/static/my_site/cv.pdf')
+    file = os.path.join(settings.BASE_DIR, 'my_site/static/my_site/moncv.pdf')
 
     fileOpened = open(file, 'rb')
 
