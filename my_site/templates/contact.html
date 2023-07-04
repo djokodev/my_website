@@ -1,6 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% block content %}
+<link
+  href="{% static 'my_site/contact.css' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
 
+<body class="bodycontact">
+  <form method="post" action="{% url 'contact' %}">
+    {% csrf_token %} {{ form.as_p }}
+    <button class="btn btn-success" type="submit">Send</button>
+  </form>
 
-    {% block content %}
-        <h1>Contact</h1>
-    {% endblock %}
+  <div class="infomations">
+    <p>Email address : djokodev75@gmail.com</p>
+    <p>Phone number : +237652260368 / +237620744571</p>
+    <p>Location : douala, Cameroon</p>
+  </div>
+</body>
+{% endblock %}
