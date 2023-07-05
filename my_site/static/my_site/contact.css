@@ -44,6 +44,7 @@ label{
     padding: 10px;
     color: #fff;
     cursor: text;
+    transition: 0.2s;
 }
 
 button{
@@ -54,4 +55,17 @@ button{
     border: 1px solid  #fff;
     width: 100%;
     cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+.infomations{
+    text-align: center;
+    margin-top: 40px;
 }
