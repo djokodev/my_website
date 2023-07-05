@@ -1,11 +1,57 @@
-.infomations {
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
 }
 
-form {
-    text-align: center;
+body{
+    background-color: rgb(128, 126, 126);
 }
 
-.bodycontact {
-    background-color: rgb(235, 255, 249);
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    margin-top: 20px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fdfbfb;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+}
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid  #fff;
+    width: 100%;
+    cursor: pointer;
 }
