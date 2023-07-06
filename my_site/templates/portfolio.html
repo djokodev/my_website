@@ -1,6 +1,80 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
     {% block content %}
-        <h1>Portfolio</h1>
+
+    <head>
+        <link href="{% static 'my_site/portfolio.css' %}" rel="stylesheet" type="text/css" />
+    </head>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqsMKcSLlQx_VZjI36rUH-E8Nuktwpc3dIxA&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CRM</h5>
+                            <p class="card-text">managing a company's customer relations.</p>
+                            <a href="#" class="btn btn-primary">more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5cBEHoSbLdCQ-eQXY8Zn33nqlzu6HNRoxxA&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Site E-commerce</h5>
+                            <p class="card-text">online sale of clothing.</p>
+                            <a href="#" class="btn btn-primary">more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDnLbAYp_lbkbEf6oVP_Q6l-clUWWXfps_hA&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestion Hôtel</h5>
+                            <p class="card-text">hotel management application.</p>
+                            <a href="#" class="btn btn-primary">more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR11vsB5nVSbgJgzTpaa5IHdmbSBXms_Kk57Q&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog d'articles</h5>
+                            <p class="card-text">development of a blog that contains articles about food products.</p>
+                            <a href="#" class="btn btn-primary">more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfsPFie8vBy3CQbvc5OkPXDdA2pre05TKsUA&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Réseau social</h5>
+                            <p class="card-text">development of a social network</p>
+                            <a href="#" class="btn btn-primary">more</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMHBir27wGiXBJ-Pv1zpUMmFvVOSHPqmOVig&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Site E-commerce</h5>
+                            <p class="card-text">site selling phones, computers and accessories.</p>
+                            <a href="#" class="btn btn-primary">more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     {% endblock %}

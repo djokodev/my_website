@@ -1,0 +1,50 @@
+body{
+    background: black;
+}
+
+.services{
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-family: sans-serif;
+}
+
+h1:after{
+    content: '';
+    background: black;
+    display: block;
+    width: 150px;   
+    height: 2px;
+    margin: 10px auto;
+
+}
+
+.icon {
+    font-size: 40px;
+    margin: 5px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.col-md-3:hover{
+    box-shadow: 5px 7px 9px -3px #66CDAA;
+    cursor: pointer;
+}
+
+p{
+    color: white;
+}
+
+h3{
+    color: #66CDAA;
+}
+
+.container{
+    text-align: center;
+}

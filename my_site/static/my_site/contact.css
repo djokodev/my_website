@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     font-family: "poppins", sans-serif;
     box-sizing: border-box;
 }
@@ -10,14 +8,12 @@ body{
 }
 
 .hero{
-    margin-top: 30px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 form{
-    margin-top: 20px;
+    margin-top: 30px;   
     width: 90%;
     max-width: 700px;
 }
@@ -31,9 +27,9 @@ input, textarea{
     width: 100%;
     padding: 10px;
     outline: 0;
-    border: 1px solid black;
+    border: 1px solid rgb(253, 249, 249);
     color: black;
-    background: transparent;
+    background: #f8f8f8;
     font-size: 15px;
 }
 
@@ -43,16 +39,16 @@ label{
     left: 0;
     top: 0;
     padding: 10px;
-    color: #66CDAA;
+    color: black;
     cursor: text;
     transition: 0.2s;
 }
 
 button{
     padding: 10px 0;
-    color: #fff;
+    color: white;
     outline: none;
-    background: transparent;
+    background: #66CDAA;
     border: 1px solid  #fff;
     width: 100%;
     cursor: pointer;
@@ -67,6 +63,7 @@ textarea:valid~label{
 }
 
 .infomations{
+    color: black;
     text-align: center;
     margin-top: 40px;
 }
